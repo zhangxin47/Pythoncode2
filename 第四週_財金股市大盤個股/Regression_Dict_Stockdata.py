@@ -1,7 +1,7 @@
 import csv
 import os
 import csvsorter
-bigmarket = "C:\\Users\\b1013\\Desktop\\Pythoncode2\\bigmarket_in.csv" 
+bigmarket = "C:\\Users\\b1013\\Desktop\\Pythoncode2\\第四週_財金股市大盤個股\\bigmarket_in.csv" 
 file_bigmarket2 = open(bigmarket, "r", encoding ="utf-8", newline ="")  #將已整理好的大盤Data再次開啟
 reader1 = csv.DictReader(file_bigmarket2) #建立Dict
 mktret = dict()
@@ -30,7 +30,7 @@ r2arr = [] # r2 存放
 minlen = 50
 ylist = [] #存放個股 一年度的ROI
 
-sorted_stock = "C:\\Users\\b1013\\Desktop\\Pythoncode2\\stocksorted.csv"
+sorted_stock = "C:\\Users\\b1013\\Desktop\\Pythoncode2\\第四週_財金股市大盤個股\\stocksorted.csv"
 sorted_stockdata = open( sorted_stock, "r", encoding ="utf-8", newline ="") #將已整理好的個股Data再次開啟
 sortedreader = csv.DictReader(sorted_stockdata, delimiter = ',')
 
